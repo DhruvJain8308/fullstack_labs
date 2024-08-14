@@ -37,11 +37,46 @@
         .hotel p {
             color: #666;
         }
+        .contact-info, .services-info {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-info h3, .services-info h3 {
+            color: #333;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Top Hotels in Pune</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">HotelFinder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <h1 id="home">Top Hotels in Pune</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -70,9 +105,82 @@
         </div>
     </div>
 
+    <!-- About Section with Contact Information -->
+    <div id="about" class="container">
+        <h2>About Us</h2>
+        <div class="contact-info">
+            <h3>The Westin Pune Koregaon Park</h3>
+            <p><strong>Address:</strong> Koregaon Park, Pune, Maharashtra 411001, India</p>
+            <p><strong>Phone:</strong> +91 20 6767 6767</p>
+            <p><strong>Email:</strong> westinpune@westin.com</p>
+        </div>
+        <div class="contact-info">
+            <h3>JW Marriott Hotel Pune</h3>
+            <p><strong>Address:</strong> Senapati Bapat Road, Pune, Maharashtra 411016, India</p>
+            <p><strong>Phone:</strong> +91 20 6683 0000</p>
+            <p><strong>Email:</strong> jw.marriott.pune@marriott.com</p>
+        </div>
+        <div class="contact-info">
+            <h3>Hyatt Regency Pune</h3>
+            <p><strong>Address:</strong> Pune-Nagar Road, Pune, Maharashtra 411014, India</p>
+            <p><strong>Phone:</strong> +91 20 6645 1234</p>
+            <p><strong>Email:</strong> hyatt.regency.pune@hyatt.com</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container">
+        <h2>Services Provided by the Hotels</h2>
+        <div class="services-info">
+            <h3>The Westin Pune Koregaon Park</h3>
+            <ul>
+                <li>24-hour Room Service</li>
+                <li>Free Wi-Fi</li>
+                <li>Outdoor Pool</li>
+                <li>Fitness Center</li>
+                <li>On-site Dining</li>
+                <li>Spa and Wellness Center</li>
+                <li>Business Center</li>
+            </ul>
+        </div>
+        <div class="services-info">
+            <h3>JW Marriott Hotel Pune</h3>
+            <ul>
+                <li>Complimentary Breakfast</li>
+                <li>Rooftop Pool</li>
+                <li>Full-Service Spa</li>
+                <li>24-hour Concierge Service</li>
+                <li>Multiple Dining Options</li>
+                <li>Business Facilities</li>
+                <li>Event Spaces</li>
+            </ul>
+        </div>
+        <div class="services-info">
+            <h3>Hyatt Regency Pune</h3>
+            <ul>
+                <li>Free Airport Shuttle</li>
+                <li>24-hour Room Service</li>
+                <li>Health Club</li>
+                <li>Outdoor Pool</li>
+                <li>On-site Restaurants</li>
+                <li>Spa and Massage Services</li>
+                <li>Business Center</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <h3>General Contact</h3>
+            <p><strong>Phone:</strong> +91 123 456 7890</p>
+            <p><strong>Email:</strong> info@hotelfinder.com</p>
+            <p><strong>Address:</strong> 123 Hotel Street, Pune, Maharashtra, India</p>
+        </div>
+    </div>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <script
