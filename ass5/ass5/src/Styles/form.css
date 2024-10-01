@@ -1,0 +1,40 @@
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group.error input {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 15px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
