@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation and jQuery Example</title>
+    <style>
+        /* Applying an aqua blue gradient background */
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Aqua to blue gradient */
+        }
+        
+        #exampleDiv {
+            color: blue;
+            position: relative;
+            left: 0;
+        }
+
+        .text-class {
+            font-size: 16px;
+        }
+
+        #exampleImage {
+            width: 400px; /* Adjusted size for better visibility */
+            height: auto;
+            border: 2px solid #0072ff; /* Adding a border to match the gradient */
+            display: block; /* Ensure the image displays as a block element */
+            margin: 20px auto; /* Center the image */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1 id="mainHeader">DWP in html and java</h1>
+    <div id="exampleDiv" class="text-class">This is a sample div.</div>
+    
+    <!-- Displaying an initial beach scene image -->
+    <img id="exampleImage" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach Scene" />
+    
+    <button id="changeTextButton">Change Text</button>
+    <button id="changeImageButton">Change Image</button>
+    <button id="addTextButton">Add Text Node</button>
+    <button id="deleteNodeButton">Delete Node</button>
+
+    <br><br>
+
+    <form id="exampleForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <button id="jqueryButton">Change Button Text</button>
+
+    <script src="dwp.js"></script>
+</body>
+</html>
