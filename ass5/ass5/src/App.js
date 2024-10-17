@@ -7,8 +7,8 @@ import ResumeBuilder from './Pages/resume';
 const App = () => {
     return (
         <div>
-            <h1>Calculator</h1>
-            {/* <Calculator />  */}
+            <h1>Using React</h1>
+            {/* <Calculator />  
             {/* <UserDataForm /> */}
             <ResumeBuilder />
         </div>
